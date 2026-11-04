@@ -1,0 +1,9 @@
+name: ci
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ran on ${{ github.event_name }}"
